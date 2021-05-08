@@ -1,0 +1,436 @@
+/*Imports*/
+
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/*1.Base*/
+
+/*  Base Rule Examples
+html, body, form
+ { margin: 0; padding: 0; }
+input[type=text] 
+{ border: 1px solid #999; }
+a { color: #039; }
+a:hover { color: #03C; }
+*/
+
+html {
+    color: blanchedalmond;
+    background: url("../images/pexels-tim-mossholder-3612932.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {}
+
+section {
+    border-radius: 5%;
+    max-height: 100%;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    height: 100vh;
+}
+
+.PageContainerClass {}
+
+img {
+    border-radius: 75%;
+    width: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 50px;
+    min-height: 50px;
+    height: auto;
+    opacity: none;
+    align-items: center;
+}
+
+.profilepictureClass {
+    top: 0px;
+    right: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto 20px;
+    display: block;
+}
+
+/*2.Typography general */
+
+p {
+    font-size: 2.0vw;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li {
+    color: white;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    color: white;
+}
+
+/*h1 to h5*/
+
+h1 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5.0vw;
+    font-weight: 500;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4.0vw;
+    font-weight: 400;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.0vw;
+    font-weight: 300;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 200;
+}
+
+h5 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.0vw;
+    font-weight: 100;
+}
+
+/*3. Layout */
+
+/* Layout Examples 
+#header, #article, #footer
+#sidebar { … }
+#maincontent
+*/
+
+footer {
+    /*Position*/
+    text-align: right;
+    float: right;
+    /*Size*/
+    font-size: 3.5vw;
+    font-weight: 750;
+    /*Style*/
+    font-family: 'Ubuntu', sans-serif;
+    /*Linear Gradient Colours*/
+    background: -webkit-linear-gradient( #367588, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*4. Module Rules
+*/
+
+/*Module is a more
+discrete component of the page. It is your navigation bars and your
+carousels and your dialogs and your widgets and so on. This is the
+meat of the page. Modules sit inside Layout components. Modules
+can sometimes sit within other Modules, too
+*/
+
+/*Navigation Bar*/
+
+.NavigationBarULOverlayClass {
+    z-index: 1;
+    left: 0;
+    top: 250px;
+    margin: 0;
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.NavigationBarULOverlayClass li {
+    padding: 10px;
+    display: block;
+    font-size: 2.0vw;
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
+    transition: 0.2s;
+}
+
+.NavigationBarULOverlayClass a {
+    padding: 8px;
+    display: block;
+    font-size: 2.0vw;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+.NavigationBarULOverlayClassContent {
+    position: sticky;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+.NavigationBarULOverlayClass .CloseButtonClass {
+    position: sticky;
+    font-family: 'Ubuntu', sans-serif;
+
+    top: 20px;
+}
+
+@media screen and (max-height: 500px) {
+    .NavigationBarULOverlayClass {
+        overflow-y: auto;
+    }
+    .NavigationBarULOverlayClass a {
+        font-size: 20px;
+    }
+    .NavigationBarULOverlayClass .CloseButtonClass {
+        top: 15px;
+        right: 0px;
+    }
+}
+
+/*5. State Rules
+
+State applied to an element
+1. State styles can apply to layout and/or module styles;
+and
+2. State styles indicate a JavaScript dependency
+*/
+
+/*Open Button*/
+
+.OpenButtonClass {
+    position: sticky;
+    top: 0px;
+    left: 35px;
+    font-size: 2vw;
+    padding: 1.5px;
+    border-radius: 20%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+
+/*Open Button :hover*/
+
+.OpenButtonClass:hover {
+    position: sticky;
+    top: 5px;
+    left:  35px;
+    font-size: 2vw;
+    padding: 2.0px;
+    border-radius: 20%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: goldenrod;
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+    cursor: pointer;
+}
+
+/*Close Button*/
+
+.CloseButtonClass {
+    position: sticky;
+    top: 0px;
+    left: 95px;
+    font-size: 2vw;
+    padding: 1.5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    border-radius: 20%;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+
+/*Close Button :hover*/
+
+.CloseButtonClass:hover {
+    position: sticky;
+    top: 0px;
+    left: 95px;
+    font-size: 2vw;
+    padding: 2.0px;
+    border-radius: 20%;
+    color: goldenrod;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+    cursor: pointer;
+}
+
+
+/* Return Top Button*/ 
+
+
+.topbtnclass {
+    padding: 5px;
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    text-align: center;
+    border-radius: 15px;
+    outline: none;
+    color: white;
+    z-index: 99;
+    font-size: 12.5px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    align-items: center;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    font-family: 'Oxygen', Sans-Serif;
+}
+
+/* Return Top Button Hover */
+
+.topbtnclass:hover {
+    color: goldenrod;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Image Magnifier Container*/
+
+.images_magnifier_container {
+
+}
+
+.img_magnifier_glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    width: 100px;
+    height: 100px;
+}
+
+
+/*    Accordion   */
+
+.SectionAccordionClass {
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 3.0s;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 3%;
+    font-size: 2.5vw;
+    font-weight: 700;
+    
+}
+
+/* 
+
+Accordion Active Class added with js
+and when mouse is over it hover .
+
+*/
+
+.activeClass:hover {
+    color: goldenrod;
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+}
+
+
+
+.SectionAccordionClass:hover {
+    color: goldenrod;
+    background-color: #dbcbd8;
+    background-image: linear-gradient(316deg, #dbcbd8 0%, #2e4057 74%);
+}
+
+/* Accordion Panel */
+
+.sectionpanel {
+    padding: 0 15px;
+    background-color: #9dc5c3;
+    background-image: linear-gradient(315deg, #9dc5c3 0%, #5e5c5c 74%);
+    display: none;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    max-height: 0;
+    overflow: hidden;
+    max-height: 90%;
+}
+
+/*6. Theme*/
+
+/* References Used 
+
+1. Cragig , W (2021)
+How to Create a 
+Responsive Full Background 
+Image Using CSS [Tutorial]
+https://www.webfx.com/blog/web-design/responsive-background-image/
+
+
+
+
+2. W3Schools(2021)  How TO - Collapsibles/Accordion
+https://www.w3schools.com/howto/howto_js_accordion.asp
+
+
+
+
+
+
+
+
+
+
+
+
+*/

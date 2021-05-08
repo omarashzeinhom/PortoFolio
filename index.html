@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<header>
+    <img class="profilepictureClass"id="profilepic" alt="profile_pic" src="images/certificates/profilepic.jpg"></img>
+
+    <body>
+        <div id='PageContainer' class="PageContainerClass">
+
+            <!-- Open Button for Navigation Bar -->
+            <button class="OpenButtonClass" id="OpenButton" onclick="openNavigationBar()">&#9776;Open</button>
+
+            <!--Navigation Bar-->
+            <ul id='NavigationBarUL' class="NavigationBarULOverlayClass">
+                <!--Left Empty since it will be practiced in JS.-->
+                <div class="NavigationBarULOverlayClassContent">
+                </div>
+            </ul>
+
+            <!-- Close Button for Navigation Bar-->
+            <button href="javascript:void(0)" class="CloseButtonClass" onclick="closeNavigationBar()">
+                &times;</button>
+
+            <!-- Section A -->
+            <button class="SectionAccordionClass">Home</button>
+            <div class="sectionpanel">
+                <section id='sectionAlpaca' class="sectionAlpacaClass" data-nav="Home">
+                    <h1 class="Header1Class" id="Header1">
+                        Home
+                    </h1>
+                </section>
+
+            </div>
+
+            <!-- Section B -->
+            <button class="SectionAccordionClass">Trainning</button>
+            <div class="sectionpanel">
+                <section id='sectionBravo' class="sectionBravoClass" data-nav="Trainning">
+                    <h2 class="Header2Class" id="Header2">
+                        Trainning
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, impedit. Molestiae, nisi
+                        pariatur
+                        nemo
+                        rem veritatis beatae recusandae?
+                        Ab, totam. Eveniet reiciendis autem omnis,
+                        natus recusandae quibusdam unde ipsum maiores?
+                    </p>
+                </section>
+            </div>
+
+
+            <!-- Section C -->
+            <button class="SectionAccordionClass">Certificates</button>
+            <div class="sectionpanel">
+                <section id='sectionCharlie' class="sectionCharlieClass" data-nav="Certificates">
+                    <h3 class="Header3Class" id="Header3">
+                        Certificates
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
+                        Totam qui a quis facilis incidunt recusandae,
+                        eligendi nesciunt, distinctio voluptatum quaerat
+                        repudiandae odio aspernatur sint dolorum aut corporis
+                        numquam! Dolor, at.
+                    </p>
+
+                    <!-- Image Magnifying Glass-->
+                    <div class="images_magnifier_container">
+                        <!--- Certificates Images-->
+                        <img id="image" alt="CFI_Certificate" src="images/certificates/CFI Certificate.JPG"></img>
+                        <img id="imageB" alt="CPD_Certificate" src="images/certificates/CPD-Certificate.jpg"></img>
+                        <img id="imageC" alt="EmadKattara_Certificate"
+                            src="images/certificates/Emad-Kattara-Ceritifcate.jpg"></img>
+                        <img id="imageD" alt="Freecodecamp_webdevelopment_Certificate"
+                            src="images/certificates/Freecodecamp-webdevelopment-Certificate.JPG"></img>
+                        <img id="imageE" alt="Google_Digital_Marketing"
+                            src="images/certificates/Google-Digital-Marketing.jpg"></img>
+                        <img id="imageF" alt="Huawei_Certificate"
+                            src="images/certificates/Huawei Certificate .jpg"></img>
+                        <img id="imageG" alt="SE&M_Certifcate_A" src="images/certificates/SE&M Certifcate A.JPG"></img>
+                        <img id="imageH" alt="Udacity_frontend_webdevop_certifcate"
+                            src="images/certificates/Udacityfrontendwebdevopcertifcate.PNG"></img>
+                        <img id="imageI" alt="Udacity_webdevop_challenger_track"
+                            src="images/certificates/Udacitywebdevopchallengertrack.PNG"></img>
+                        <img id="imageJ" alt="udemy_intro_to_python_certificate_PNG"
+                            src="images/certificates/udemyintrotopythoncertificatePNG.PNG"></img>
+                        <img id="imageK" alt="Alex_bank_certificate"
+                            src="images/certificates/Alexbankcertificate.PNG"></img>
+                    </div>
+
+                    <!-- Image Magnifying Glass End-->
+
+                </section>
+            </div>
+
+
+
+            <!-- Section D -->
+            <button class="SectionAccordionClass">Projects</button>
+            <div class="sectionpanel">
+                <section id='sectionDelta' class="sectionDeltaClass" data-nav="Projects">
+                    <h4 class="Header4Class" id="Header4">
+                        Projects
+                    </h4>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, impedit. Molestiae, nisi
+                        pariatur
+                        nemo
+                        rem veritatis beatae recusandae?
+                        Ab, totam. Eveniet reiciendis autem omnis,
+                        natus recusandae quibusdam unde ipsum maiores?
+                    </p>
+                </section>
+            </div>
+
+
+
+            <!-- Section E -->
+
+            <button class="SectionAccordionClass">Contact</button>
+            <div class="sectionpanel">
+                <section id='sectionEcho' class="sectionEchoClass" data-nav="Contact">
+                    <h5 class="Header5Class" id="Header5">
+                        Contact
+                    </h5>
+                    <div class="responsive_form_25_Class" id="responsive-form-25">
+                        <form>
+                            <input>
+                        </form>
+                    </div>
+
+                </section>
+            </div>
+
+
+    </body>
+    </div>
+</header>
+
+  <!-- Button to return top-->
+  <button class="topbtnclass" onclick="pushtopfunction()">Top</button>
+
+<script src="js/app.js"></script>
+
+
+
+
+<footer id="footerID" class="footerClass">
+    OmarZeinhom©
+</footer>
+
+
+
+
+
+</html>
