@@ -81,6 +81,33 @@ a {
     color: white;
 }
 
+label {
+    padding: 1rem 1rem 1rem 0;
+    display: inline-block;
+    font-size: 1.5vw;
+    align-items: center;
+    text-align: center;
+    background: -webkit-linear-gradient(#CD5C5C, #FFFFF0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid ,teal;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+
+
+
+
+
+
 /*h1 to h5*/
 
 h1 {
@@ -140,6 +167,50 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+
+
+
+
+/* 
+    Floating columns for container-cols  at 25 percent width 
+*/
+
+
+.container-cols-25 {
+    float: left;
+    width: 25%;
+    margin-top: 5px;
+  }
+  
+
+
+
+  /* Floating column for container-cols at 75 percent width */
+  .container-cols-75 {
+    float: left;
+    width: 75%;
+    margin-top: 5px;
+  }
+  
+
+  /* Clearing the  floats after the columns */
+  .container-rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+
+
+
+
 
 /*4. Module Rules
 */

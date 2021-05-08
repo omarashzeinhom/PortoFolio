@@ -9,7 +9,7 @@
 </head>
 
 <header>
-    <img class="profilepictureClass"id="profilepic" alt="profile_pic" src="images/certificates/profilepic.jpg"></img>
+    <img class="profilepictureClass" id="profilepic" alt="profile_pic" src="images/certificates/profilepic.jpg"></img>
 
     <body>
         <div id='PageContainer' class="PageContainerClass">
@@ -134,10 +134,38 @@
                     <h5 class="Header5Class" id="Header5">
                         Contact
                     </h5>
-                    <div class="responsive_form_25_Class" id="responsive-form-25">
-                        <form>
-                            <input>
-                        </form>
+                    <!-- Container A-->
+
+                    <div class=container-rows>
+                        <div class="container-cols-25">
+                            <label for="Name">Enter Name Here</label>
+                        </div>
+                        <div class="container-cols-75">
+                            <input type="text" id="Name" splaceholder="Enter Name Here">
+                        </div>
+                    </div>
+                                        <!-- Container B-->
+
+                    <div class=container-rows>
+                        <div class="container-cols-25">
+                            <label for="Email">Enter Email Here</label>
+                        </div>
+                        <div class="container-cols-75">
+                            <input type="text" id="Email" splaceholder="Enter Email Here">
+                        </div>
+                    </div>
+                                 
+                    <!-- Container C-->
+                    <!-- Message Me Form Text Area-->
+                    <div class=container-rows>
+                        <div class="container-cols-25">
+                            <label for="Message">Message me</label>
+                        </div>
+                        <div class="container-cols-75">
+                            <textarea class="myInput" id="Message" placeholder="Message me" rows="5"
+                                cols="25">
+                            </textarea>
+                        </div>
                     </div>
 
                 </section>
@@ -148,8 +176,8 @@
     </div>
 </header>
 
-  <!-- Button to return top-->
-  <button class="topbtnclass" onclick="pushtopfunction()">Top</button>
+<!-- Button to return top-->
+<button class="topbtnclass" onclick="pushtopfunction()">Top</button>
 
 <script src="js/app.js"></script>
 
