@@ -331,7 +331,7 @@ and
 .CloseButtonClass {
     position: sticky;
     top: 0px;
-    left: 95px;
+    left: 150px;
     font-size: 2vw;
     padding: 1.5px;
     font-family: 'Ubuntu', sans-serif;
@@ -348,7 +348,7 @@ and
 .CloseButtonClass:hover {
     position: sticky;
     top: 0px;
-    left: 95px;
+    left: 150px;
     font-size: 2vw;
     padding: 2.0px;
     border-radius: 20%;
