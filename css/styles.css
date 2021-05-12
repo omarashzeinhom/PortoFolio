@@ -14,6 +14,11 @@ a { color: #039; }
 a:hover { color: #03C; }
 */
 
+*{
+    box-sizing: border-box;
+}
+
+
 html {
     color: blanchedalmond;
     background: url("../images/pexels-tim-mossholder-3612932.jpg");
@@ -23,7 +28,11 @@ html {
     background-attachment: fixed;
 }
 
-body {}
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
 
 section {
     border-radius: 5%;
@@ -37,7 +46,6 @@ form {
     height: 100vh;
 }
 
-.PageContainerClass {}
 
 img {
     border-radius: 75%;
@@ -51,6 +59,9 @@ img {
     align-items: center;
 }
 
+
+/*Main Profile Pic*/
+
 .profilepictureClass {
     top: 0px;
     right: 250px;
@@ -62,7 +73,9 @@ img {
     display: block;
 }
 
+
 /*Table*/
+
 
 .tablecenter {
     margin-left: auto;
@@ -112,11 +125,6 @@ label {
     box-sizing: border-box;
     resize: vertical;
   }
-
-
-
-
-
 
 
 /*h1 to h5*/
@@ -196,8 +204,6 @@ footer {
   }
   
 
-
-
   /* Floating column for container-cols at 75 percent width */
   .container-cols-75 {
     float: left;
@@ -212,15 +218,6 @@ footer {
     display: table;
     clear: both;
   }
-
-
-
-
-
-
-
-
-
 
 
 /*4. Module Rules
@@ -372,66 +369,6 @@ and
 }
 
 
-/* Return Top Button*/ 
-
-
-.topbtnclass {
-    padding: 5px;
-    bottom: 0px;
-    left: 0px;
-    position: fixed;
-    text-align: center;
-    border-radius: 15px;
-    outline: none;
-    color: white;
-    z-index: 99;
-    font-size: 12.5px;
-    cursor: pointer;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    align-items: center;
-    background-color: #000000;
-    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
-    font-family: 'Oxygen', Sans-Serif;
-}
-
-/* Return Top Button Hover */
-
-.topbtnclass:hover {
-    color: goldenrod;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    background-color: #5b6467;
-    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Image Magnifier Container*/
-
-.images_magnifier_container {
-
-}
-
-.img_magnifier_glass {
-    position: absolute;
-    border: 3px solid #000;
-    border-radius: 50%;
-    cursor: none;
-    width: 100px;
-    height: 100px;
-}
-
 
 /*    Accordion   */
 
@@ -488,6 +425,91 @@ and when mouse is over it hover .
     max-height: 90%;
 }
 
+
+/*Images Grid 1,2,4*/
+
+
+.imagesRows{
+    padding: 0 5px;
+    flex-wrap: wrap;
+    display: flex;
+    display:-ms-flexbox;
+    -ms-flex-wrap: wrap;
+    
+}
+
+
+.columnRows{
+    flex: 50%;
+    padding: 0, 5px;
+    -ms-flex: 50%;
+}
+
+
+.columnRows img{
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+/* Img Zoom Container */
+
+.imageZoomContainer{
+    position: relative;
+}
+
+
+.imagesZoomLens {
+    border: 1.5px solid black;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+}
+
+
+.imgZoomResults{
+    /*
+    The Output Result of 
+    the div element
+    */
+    width:  250px;
+    height: 250px;
+}
+
+
+/* Return Top Button*/ 
+
+
+.topbtnclass {
+    padding: 5px;
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    text-align: center;
+    border-radius: 15px;
+    outline: none;
+    color: white;
+    z-index: 99;
+    font-size: 12.5px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    align-items: center;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    font-family: 'Oxygen', Sans-Serif;
+}
+
+/* Return Top Button Hover */
+
+.topbtnclass:hover {
+    color: goldenrod;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+}
+
+
 /*6. Theme*/
 
 /* References Used 
@@ -500,12 +522,12 @@ https://www.webfx.com/blog/web-design/responsive-background-image/
 
 
 
-
 2. W3Schools(2021)  How TO - Collapsibles/Accordion
 https://www.w3schools.com/howto/howto_js_accordion.asp
 
 
-
+3. W3Schools(2021) How TO - Image Grid
+https://www.w3schools.com/howto/howto_js_image_grid.asp
 
 
 
