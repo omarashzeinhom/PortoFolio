@@ -1,11 +1,8 @@
-
-
-
 /*1.    
     Variables
 */
 
-const sections = document.querySelectorAll("section");
+const pgsections = document.querySelectorAll("section");
 
 
 const navigationbar = document.getElementById("NavigationBarUL");
@@ -32,7 +29,7 @@ const imgrows = document.getElementsByClassName("imagesRows");
     to click smoothly.
 */
 
-sections.forEach((elm, _index) => {
+pgsections.forEach((elm, _index) => {
     let pagelinkstext = elm.getAttribute("data-nav");
     let pagenewlinks = document.createElement("a");
     let pagenewlistitems = document.createElement("li");
@@ -50,12 +47,12 @@ navigationbar.appendChild(pagefragment);
 
 
 window.addEventListener("scroll", () => {
-    sections.forEach((pagesection, _index) => {
+    pgsections.forEach((pagesection, _index) => {
         const docreact = pagesection.getBoundingClientRect();
         const pagenavsection = pagesection.getAttribute("data-nav");
         if (docreact.top > 0 && docreact.top < 410) {
             //alert(pagesection.getAttribute("data-nav")+ docreact.top);
-            sections.forEach((activesection) => {
+            pgsections.forEach((activesection) => {
                 activesection.style.background = "transparent";
             })
             pagesection.style.backgroundImage = "linear-gradient(315deg, #7f5a83 0%, #0d324d 74%)";
@@ -63,6 +60,7 @@ window.addEventListener("scroll", () => {
             pagesection.style.opacity = "75%";
             pagesection.style.textAlign = "center";
             pagesection.style.height = "100vh";
+            pagesection.style.scrollBehavior="smooth";
 
 
             const pagealinks = document.querySelectorAll("a");
@@ -75,6 +73,7 @@ window.addEventListener("scroll", () => {
                     pagealink.style.borderRadius = "25%";
                     pagealink.style.width = "100%";
                     pagealink.style.textAlign = "center";
+                    pagealink.style.scrollBehavior="smooth";
 
                 }
             })
@@ -97,14 +96,17 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay2
 
 
 function openNavigationBar() {
-    navigationbar.style.height = "65%";
-    navigationbar.style.width = "10%";
+    navigationbar.style.height = "100%";
+    navigationbar.style.maxHeight="35%";
+    navigationbar.style.width = "100%";
+    navigationbar.style.maxWidth="30%";
     navigationbar.style.marginRight = "150px";
     navigationbar.style.opacity = "90%";
     navigationbar.style.marginTop = "55px";
     navigationbar.style.borderRadius = "5%";
     navigationbar.style.overflowX = "hidden"
     navigationbar.style.textAlign = "left";
+    navigationbar.style.scrollBehavior="smooth";
 
 
 
